@@ -1,3 +1,31 @@
 ###
 GET http://localhost:3005/
 
+###
+GET http://localhost:3005/songs
+
+###
+GET http://localhost:3005/songs/3
+
+###
+POST http://localhost:3005/songs
+Content-Type: application/json
+
+{
+    "song_name": "Blinding Lights",
+    "artist": "The Weekend",
+    "album": "After Hours"
+}
+
+###
+PATCH http://localhost:3005/songs/10
+Content-Type: application/json
+
+{
+    "song_name": "BLING LIGHTS",
+    "artist": "The Weekday",
+    "album": "Office Hours"
+} 
+
+###
+DELETE http://localhost:3005/songs/8
